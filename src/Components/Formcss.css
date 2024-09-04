@@ -34,7 +34,7 @@ input[type="tel"] {
 
 button[type="submit"] {
     padding: 10px 15px;
-    background-color:yellow;
+    background-color:pink;
     color: white;
     border: none;
     border-radius: 4px;
