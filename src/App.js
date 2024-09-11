@@ -18,12 +18,13 @@ const sendData = [
     name: "Venkat",
     age: 34,
     gender:"Male"
+  },
+  {
+    name: "charani",
+    age: 24,
+    gender:"Female"
   }
 ]
-
-
-// const sendData  = [12,32,21,45,56]
-// console.log(sendData);
 
 
 
