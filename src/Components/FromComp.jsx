@@ -10,10 +10,9 @@ export default function FromComp() {
   const [userPho,setPho] = useState("");
   const [show,setShow] = useState([])
 
-
   const calledOnSubmit= (e) =>{
     console.log(e)
-    e.preventDefault();
+    e.preventDefault();  
 
     setShow([...show,userName,userAge,userEmail,userPho])
     setName("")
@@ -22,6 +21,8 @@ export default function FromComp() {
     setPho("")
       
   }
+
+  
   
 
   return (
@@ -31,31 +32,32 @@ export default function FromComp() {
             <input type="text"
             value={userName}
             placeholder='Enter the Name'
-            onChange={(e) =>{setName(e.target.value)}} required/>
+            onChange={(e) =>{setName(e.target.value)}} />
             <br />
 
             <label>Age : </label>
             <input type="number" 
             value={userAge}
             placeholder='Enter the Age'
-            onChange={(e) =>{setAge(e.target.value)}} required/>
+            onChange={(e) =>{setAge(e.target.value); console.log(e.target);console.log(e.target.placeholder)}} />
+           
             <br />
 
             <label>Email : </label>
             <input type="email" 
             value={userEmail}
             placeholder='Enter the Email'
-            onChange={(e) =>{setEmail(e.target.value)}} required/>
+            onChange={(e) =>{setEmail(e.target.value)}} />
             <br />
 
             <label>Phone No: </label>
             <input type="text"
             value={userPho}
             placeholder='Enter Phone Number'
-            onChange={(e)=>{setPho(e.target.value)}} required/>
+            onChange={(e)=>{setPho(e.target.value)}} />
             <br />
            
-            <button type="submit">Submit</button>
+            <button type="submit" style={{backgroundColor:"red"}} disabled={false}>Submit</button>
         </form>
       <DisplayCom showArray = {show}/>
     </div>
