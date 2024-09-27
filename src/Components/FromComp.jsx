@@ -22,6 +22,7 @@ export default function FromComp() {
     setPho("")
       
   }
+  
 
   return (
     <div className="container-div">
@@ -56,7 +57,6 @@ export default function FromComp() {
            
             <button type="submit">Submit</button>
         </form>
-
       <DisplayCom showArray = {show}/>
     </div>
   )

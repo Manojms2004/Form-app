@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.css';
-// import FromComp from './Components/FromComp';
+import FromComp from './Components/FromComp';
 import Demo from './Components/Demo';
 
 const sendData = [
@@ -30,8 +30,8 @@ const sendData = [
 
 function App() {
   return (
-    <Demo collect = {sendData}/>
-    // <FromComp/>
+    // <Demo collect = {sendData}/>
+    <FromComp/>
   );
 }
 
